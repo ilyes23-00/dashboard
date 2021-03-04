@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "",
+    "editor.inlineHints.fontFamily": " open-sans, Helvetica, sans-serif",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+}

@@ -1,0 +1,55 @@
+.settigns-box {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #ffff;
+  z-index: 1000;
+  padding: 20px;
+  transition: 0.3s;
+  .option-title {
+    font-weight: bold;
+    color: #666;
+    margin: 10px 0 15px;
+  }
+  .toggle-settings {
+    position: absolute;
+    left: -48px;
+    top: 100px;
+    background: #fff;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+  }
+  &.show-settings {
+    right: 0px;
+  }
+  .color-options {
+    ul {
+      $colors: #27ae60, #2980b9, #c0392b;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{$i}) {
+          background-color: nth($colors, $i);
+        }
+      }
+      li {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        opacity: 0.5;
+        display: inline-block;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .font-option {
+    select {
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.settigns-box 
+    .toggle-settings
+        i.fas.fa-cog.fa-lg.show-settings
+    .settigns-content.text-center
+        .option-box.color-options
+            h4.option-title Color option
+            - var themes = ["green-theme", "blue-theme", "red-theme"]
+            ul.list-unstyled
+                each theme in themes
+                    li(data-theme=theme)
+        hr
+        .option-box.font-option
+            h4.option-title font option
+            - var fonts = ["Open", "Roboto", "Oswlad"]
+            select.form-control
+                each font in fonts
+                    option(value=font)=font + ' Font '
+        hr
+        .option-box
+            h4.option-title sidebar option

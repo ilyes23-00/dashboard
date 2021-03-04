@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&amp;family=Oswald:wght@200;500&amp;family=Roboto:wght@100;300&amp;display=swap"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body> 
+    <div class="page home-page"> 
+      <div class="settigns-box"> 
+        <div class="toggle-settings"><i class="fas fa-cog fa-lg show-settings"></i></div>
+        <div class="settigns-content text-center">
+          <div class="option-box color-options">
+            <h4 class="option-title">Color option</h4>
+            <ul class="list-unstyled">
+              <li data-theme="green-theme"></li>
+              <li data-theme="blue-theme"></li>
+              <li data-theme="red-theme"></li>
+            </ul>
+          </div>
+          <hr/>
+          <div class="option-box font-option">
+            <h4 class="option-title">font option</h4>
+            <select class="form-control">
+              <option value="Open">Open Font </option>
+              <option value="Roboto">Roboto Font </option>
+              <option value="Oswlad">Oswlad Font </option>
+            </select>
+          </div>
+          <hr/>
+          <div class="option-box">
+            <h4 class="option-title">sidebar option</h4>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar"> 
+        <div class="logo-area text-center">EasyBox </div>
+        <ul class="links-area list-unstyled"> 
+          <li><a class="active" href="homepage.html">Home </a></li>
+          <li><a class="toggle-submenu" href="#">
+               Data <i class="fas fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Input </a></li>
+              <li><a href="#">Textarea</a></li>
+              <li><a href="#">Checkbox</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </li>
+          <li><a class="toggle-submenu" href="#">
+               Information <i class="fas fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">loading </a></li>
+              <li><a href="#">music  </a></li>
+            </ul>
+          </li>
+          <li><a href="data.html">data  </a></li>
+        </ul>
+      </div>
+      <div class="content-area"> 
+        <div class="header"> <i class="fas fa-exchange-alt fa-lg toggle-sidebar"> </i>
+          <div class="dropdown notifications-container"><i class="fas fa-bell fa-lg toggle-notification header-icon" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notification">
+              <div class="noti-head">
+                 Notifcations <span>50</span></div>
+              <div class="noti-content"> 
+                <ul class="list-unstyled"> 
+                  <li> <i class="fas fa-envelope fa-lg header-icon"></i> You got mail from user</li>
+                  <li> <i class="fas fa-money-bill-wave fa-lg header-icon"></i> You got money from user</li>
+                  <li> <i class="fas fa-thumbs-up fa-lg header-icon"></i> You got likes from user</li>
+                </ul>
+              </div>
+              <div class="noti-footer text-center"><a href="#">View  all notifications  </a></div>
+            </div>
+          </div><i class="fas fa-expand fa-lg toggle-fullscreen header-icon"></i>
+          <div class="dropdown username-container">
+            <div class="uesername" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar rounded-circle" src="imgs/img_avatar.png" alt="user"/><span class="user">EASYBOX </span><i class="fas fa-angle-down fa-lg"></i></div>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="usermenu">
+              <div class="user-info"> 
+                <h3>EASYBOX </h3>
+                <p>Premium Member </p>
+              </div>
+              <hr/>
+              <ul class="list-unstyled activities-list">
+                <li>added comment</li>
+                <li>Create posts</li>
+                <li>Created chart</li>
+                <li>add comment list</li>
+              </ul>
+              <hr/>
+              <div class="row user-menu-links"> 
+                <div class="col"> 
+                  <div class="link-box"> <i class="fas fa-user fa-lg fa-fw"></i><span>Acount </span></div>
+                </div>
+                <div class="col"> 
+                  <div class="link-box"> <i class="fas fa-cog fa-lg fa-fw"></i><span>Setting </span></div>
+                </div>
+                <div class="col"> 
+                  <div class="link-box"> <i class="fas fa-power-off fa-lg fa-fw"></i><span>Log out </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid"> 
+          <div class="content"> 
+            <div class="page-head">
+              <h1 class="page-title">homepage</h1>
+              <p class="page-description lead">this is description of </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"> </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

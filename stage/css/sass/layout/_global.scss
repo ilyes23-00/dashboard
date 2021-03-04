@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+    &.Open{
+    font-family: 'Open Sans', sans-serif;
+  }
+  &.Roboto{
+    font-family: 'Roboto', sans-serif;
+  }
+  &.Oswlad{
+    font-family: 'Oswald', sans-serif;
+  }
+}
+.page {
+  min-height: 100vh;
+  .content-area {
+    background-color: #eaedf1;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: 0.3s;
+    will-change: width;
+    float: right;
+    &.no-sidebar {
+      width: 100%;
+    }
+  }
+  .page-head{
+    margin-top:20px;
+    padding:20px;
+    .page-title{
+      font-weight: bold;
+      color: #27ae60;
+     
+    }
+
+  }
+}
